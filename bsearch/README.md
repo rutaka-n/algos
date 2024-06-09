@@ -18,3 +18,16 @@ mid = L + ((R - L) / 2)
 ```
 the last formula garantees that result value does not exeeded the max integer value.
 
+checkout implementation in GO and C.
+to run tests in GO:
+```
+cd go && go test -v .
+```
+to run tests in C:
+```
+cd c && make && testrun
+```
+and for stdlib example:
+```
+cd c && make CFLAGS="-DBSEARCH_STD" && make testrun
+```
